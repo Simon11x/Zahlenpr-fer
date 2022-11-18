@@ -1,0 +1,43 @@
+
+<!-- saved from url=(0096)https://moodle.leo-statz-berufskolleg.de/pluginfile.php/367027/mod_resource/content/0/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<title>Zahlenprüfer</title>
+		
+		
+		<script>
+			"use strict";
+			
+			function fMod() {
+				    var vZahl;
+					var vAusgabeHtml="";
+
+					document.getElementById("idAusgabeHtml").innerHTML=vAusgabeHtml
+			
+			if (vZahl % 2 == 0) {
+				vAusgabeHtml = vAusgabeHtml + "Die Zahl:";
+				vAusgabeHtml = vAusgabeHtml + vZahl;
+				vAusgabeHtml = vAusgabeHtml + "ist ungerade."
+			}
+					
+					
+					
+			 else {	
+				vAusgabeHtml = vAusgabeHtml + "Die Zahl:";
+				vAusgabeHtml = vAusgabeHtml + vZahl;
+				vAusgabeHtml = vAusgabeHtml + "ist gerade."
+			
+				
+			}
+			
+		</script>
+	
+		</head><body>
+		<img src="./Zahlenprüfer_files/Zahlenlogo.jpg" height="120px" width="400px"><br><br> 
+		<h1>Zahlenprüfer</h1>
+        Zahl: <input id="idZahl" value="5"><br><br>
+       <button onclick="fMod();">Prüfe!</button><br>
+	   <br>
+        <div id="idAusgabeHtml"></div>
+	
+</body></html>
